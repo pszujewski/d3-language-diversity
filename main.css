@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EAF2EA;
+}
+
+.canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px; 
+}
+
+.pie-section-header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.pieGroup {
+  cursor: pointer;
+}
+
+.pie-click-prompt {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px; 
+}
+
+.tab-list {
+  list-style-type: none;
+}
+
+.tab-list li {
+  display: inline-block;
+}
+
+.container {
+  max-width: 820px;
+  margin: 15px auto 10px;
+}
+
+h4 {
+  margin-top: 25px;
+  text-align: center;
+  color: #464846;
+}
+
+.arc .arc-label {
+  font-size: 12px;
+}
+
+.table {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 5px;
+}

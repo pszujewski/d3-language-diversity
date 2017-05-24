@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>d3 Intro</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+  <body>
+
+    <h4>Visualizing linguistic diversity in the United States with D3.js</h4>
+
+    <div class="container">
+      <div id="tabs">
+        <ul>
+          <li><a href="#section-1">Horizontal Bar Chart</a></li>
+          <li><a href="#section-2">Vertical Bar Chart</a></li>
+          <li><a href="#section-3">Pie Charts</a></li>
+          <li><a href="#section-4">Data Table</a></li>
+        </ul>
+        <section class="tab-view" id="section-1">
+          <div class='section-1-root'></div>
+        </section>
+        <section class="tab-view" id="section-2">
+          <div class='section-2-root'></div>
+        </section>
+        <section class="tab-view" id="section-3">
+         <div class='section-3-root'></div>
+        </section>
+        <section class="tab-view" id="section-4">
+          <table class="table table-bordered table-hover table-condensed">
+            <tbody>
+              <tr>
+                <td>Language</td>
+                <td>Total Speakers</td>
+                <td>% of the Population </td>
+                <td>Origin</td>
+              </tr>
+              <tr>
+                <td>English</td>
+                <td>228,285,377</td>
+                <td>79.7%</td>
+                <td>null</td>
+              </tr>
+              <tr>
+                <td>Non-English</td>
+                <td>58,266,345</td>
+                <td>20.3%</td>
+                <td>null</td>
+              </tr>
+              <tr>
+                <td>Spanish</td>
+                <td>36,149,240</td>
+                <td>12.6%</td>
+                <td>Europe/Americas</td>
+              </tr>
+              <tr>
+                <td>French</td>
+                <td>1,267,188</td>
+                <td>0.4%</td>
+                <td>Europe/Americas</td>
+              </tr>
+              <tr>
+                <td>German</td>
+                <td>1,102,804</td>
+                <td>0.4%</td>
+                <td>Europe/Americas</td>
+              </tr>
+              <tr>
+                <td>Russian</td>
+                <td>849,796</td>
+                <td>0.3%</td>
+                <td>Europe/Americas</td>
+              </tr>
+              <tr>
+                <td>Haitian Creole</td>
+                <td>696,163</td>
+                <td>0.2%</td>
+                <td>Europe/Americas</td>
+              </tr>
+              <tr>
+                <td>Portuguese</td>
+                <td>689,697</td>
+                <td>0.2%</td>
+                <td>Europe/Americas</td>
+              </tr>
+              <tr>
+                <td>Polish</td>
+                <td>583,427</td>
+                <td>0.2%</td>
+                <td>Europe/Americas</td>
+              </tr>
+              <tr>
+                <td>Chinese</td>
+                <td>2,633,123</td>
+                <td>0.9%</td>
+                <td>East/South Asia</td>
+              </tr>
+              <tr>
+                <td>Hindi/Urdu</td>
+                <td>2,088,057</td>
+                <td>0.7%</td>
+                <td>East/South Asia</td>
+              </tr>
+              <tr>
+                <td>Filipino</td>
+                <td>1,709,651</td>
+                <td>0.6%</td>
+                <td>East/South Asia</td>
+              </tr>
+              <tr>
+                <td>Vietnamese</td>
+                <td>1,338,309</td>
+                <td>0.5%</td>
+                <td>East/South Asia</td>
+              </tr>
+              <tr>
+                <td>Korean</td>
+                <td>1,124,994</td>
+                <td>0.4%</td>
+                <td>East/South Asia</td>
+              </tr>
+              <tr>
+                <td>Khmer, Hmong, Lao and related</td>
+                <td>748,896</td>
+                <td>0.3%</td>
+                <td>East/ South Asia</td>
+              </tr>
+              <tr>
+                <td>Arabic</td>
+                <td>819,678</td>
+                <td>0.3%</td>
+                <td>East/ South Asia</td>
+              </tr>
+              <tr>
+                <td>Persian (Farsi)</td>
+                <td>370,759</td>
+                <td>0.1%</td>
+                <td>East/ South Asia</td>
+              </tr>
+              <tr>
+                <td>Other Languages</td>
+                <td>3,992,328</td>
+                <td>1.4%</td>
+                <td>null</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+
+    <script type='text/javascript' src='app.js'></script>
+  </body>
+</html>

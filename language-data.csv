@@ -1,0 +1,19 @@
+language,totalSpeakers,percentPop,origin
+english,"228,285,377",79.7,englishOnly
+nonEnglish,"58,266,345",20.3,null
+Spanish,"36,149,240",12.6,european/americas
+French,"1,267,188",0.4,european/americas
+German,"1,102,804",0.4,european/americas
+Russian,"849,796",0.3,european/americas
+Haitian Creole,"696,163",0.2,european/americas
+Portuguese,"689,697",0.2,european/americas
+Polish,"583,427",0.2,european/americas
+Chinese,"2,633,123",0.9,east/southAsia
+"Hindi/Urdu","2,088,057",0.7,east/southAsia
+Filipino,"1,709,651",0.6,east/southAsia
+Vietnamese,"1,338,309",0.5,east/southAsia
+Korean,"1,124,994",0.4,east/southAsia
+"Khmer, Hmong, Lao and related","748,896",0.3,east/southAsia
+Arabic,"819,678",0.3,westAsia/northAfrica
+Persian (Farsi),"370,759",0.1,westAsia/northAfrica
+Other,"3,992,328",1.4,allOther
