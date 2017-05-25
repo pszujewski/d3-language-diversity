@@ -9,9 +9,9 @@
 
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    
+
     <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.js"></script>
-    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <!--<script src="https://d3js.org/topojson.v2.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -30,7 +30,11 @@
           <li><a href="#section-5">U.S. Heat Map</a></li>
         </ul>
         <section class="tab-view" id="section-1">
-          <div class='section-1-root'></div>
+          <div class='section-1-root'>
+            <p class="section-header">
+              Languages spoken in the U.S. other than English (expressed as % of the total population)
+            </p>
+          </div>
         </section>
         <section class="tab-view" id="section-2">
           <div class='section-2-root'></div>
@@ -159,6 +163,15 @@
           </table>
         </section>
         <section class="tab-view" id="section-5">
+          <div class='heat-map-title-container'>
+            <div class='item-one'>
+              <p>Density of non-English speaking populations by state</p>
+            </div>
+            <div class='item-two-color-box'>
+              <div class='color-container'><div class='color high'></div><p>Highest % concentration</p></div>
+              <div class='color-container'><div class='color low'></div><p>Lowest % concentration</p></div>
+            </div>
+          </div>
           <div class='section-5-root'></div>
         </section>
       </div>

@@ -30,6 +30,10 @@ body {
   margin: 0 auto;
 }
 
+.section-5-root {
+  max-height: 700px;
+}
+
 .pie-label-container {
   text-align: center;
 }
@@ -95,4 +99,69 @@ tr {
 td {
   border: 1px solid #ddd;
   padding: 5px;
+}
+
+/* Legend Position Style */
+.legend {
+	position:relative;
+  left:30px;
+	top:-520px;
+}
+
+.axis text {
+	font: 10px sans-serif;
+}
+
+.axis line, .axis path {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.heat-map-title-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.heat-map-title-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.heat-map-title-container .item-one p {
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.heat-map-title-container .item-two-color-box {
+  background-color: #f1f1f1;
+  padding: 5px 15px; 
+  border-radius: 10px;
+}
+
+.heat-map-title-container .color-container {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.heat-map-title-container .color-container p {
+  padding-top: 5px;
+  padding-left: 3px;
+}
+
+.heat-map-title-container .color {
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+.heat-map-title-container .color-container .high {
+  background-color: #d73d32;
+}
+
+.heat-map-title-container .color-container .low {
+  background-color: #f7d8d6;
 }
