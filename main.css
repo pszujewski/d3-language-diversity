@@ -3,6 +3,18 @@ body {
   background-color: #EAF2EA;
 }
 
+.states:hover {
+  fill: red;
+}
+.state-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
 .canvas {
   display: block;
   margin: 0 auto;
@@ -14,8 +26,15 @@ body {
   margin-bottom: 20px; 
 }
 
-.pie-section-header {
+.pieContainer {
+  margin: 0 auto;
+}
+
+.pie-label-container {
   text-align: center;
+}
+
+.pie-section-header {
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -25,7 +44,6 @@ body {
 }
 
 .pie-click-prompt {
-  text-align: center;
   margin-top: 0;
   margin-bottom: 20px; 
 }
@@ -39,8 +57,8 @@ body {
 }
 
 .container {
-  max-width: 820px;
-  margin: 15px auto 10px;
+  max-width: 1020px;
+  margin: 15px auto 30px;
 }
 
 h4 {

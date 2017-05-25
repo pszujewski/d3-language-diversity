@@ -56,10 +56,12 @@ getData().then(data => {
     }
   }
 
+// ============= Bar chart 1 ================
+
 function doHorizontalBarChart(root) {
 
   d3.select(root).append("p").attr("class", "section-header")
-    .text("Languages spoken in the U.S. other than English (percentage of the total population)");
+    .text("Languages spoken in the U.S. other than English (expressed as % of the total population)");
 
   const width = 700;
   const height = 400;
@@ -124,7 +126,7 @@ function doHorizontalBarChart(root) {
 function doVerticalBarChart(root) {
 
   d3.select(root).append("p").attr("class", "section-header")
-    .text("Languages spoken in the U.S. other than English (percentage of the total population)");
+    .text("Languages spoken in the U.S. other than English (expressed as % of the total population)");
 
   const revWidth = 700;
   const revHeight = 350;
@@ -240,18 +242,18 @@ if (!languagesSpread) {
   label = "Total U.S. population according to primary language spoken at home";
 }
 else {
-  label = "Languages spoken in the U.S. other than English and Spanish (percentage of the total population)";
+  label = "Languages spoken in the U.S. other than English and Spanish (expressed as % of the total population)";
 }
 
   d3.select(root).append("div")
     .attr("class", "pie-label-container")
     .append("p")
       .attr("class", "pie-section-header")
-      .text(label)
+      .text(label);
 
-    d3.select(".pie-label-container").append("p")
-      .attr("class", "pie-click-prompt")
-      .text("Click on the pie chart below to get new data");
+  d3.select(".pie-label-container").append("p")
+    .attr("class", "pie-click-prompt")
+    .text("Click on the pie chart below to get new data");
 
   const { pieData, total } = getPieData(data, languagesSpread)
 
@@ -265,10 +267,11 @@ else {
     .attr("class", "pieContainer")
     .attr("width", 700)
     .attr("height", 550)
+    .attr("display", "block")
     
   const pieGroup = pieContainer.append("g")
     .attr("class", "pieGroup")
-    .attr("transform", "translate(400, 270)");
+    .attr("transform", "translate(350, 270)");
 
   const arc = d3.arc()
     .innerRadius(innerRadiusEval)
@@ -311,18 +314,56 @@ else {
 
 }
 
+function loadMap(root) {
+
+  const width = 960;
+  const height = 600;
+
+  // const width = 420;
+  // const height = 400;
+
+  // const projection = d3.geoAlbersUsa()
+  //   .scale(170)
+  //   .translate([width/2, height/2]);
+
+  const svg = d3.select(root).append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  const path = d3.geoPath();
+
+  d3.json("https://d3js.org/us-10m.v1.json", function(error, us) {
+    
+    if (error) throw error;
+
+    console.log(us);
+
+    svg.append("g")
+      .attr("class", "states")
+      .selectAll("path")
+      .data(topojson.feature(us, us.objects.states).features)
+      .enter()
+      .append("path")
+        .attr("d", path);
+
+    svg.append("path")
+        .attr("class", "state-borders")
+        .attr("d", path(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; })));
+
+  });    
+
+}
+
 $(function(e) {
 
   doHorizontalBarChart(".section-1-root");
   doVerticalBarChart(".section-2-root");
   doPieChart(data, ".section-3-root");
+  loadMap(".section-5-root");
 
 });
 
 }); // End of promise
-
-
-
 
 
 
