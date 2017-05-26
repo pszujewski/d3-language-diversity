@@ -9,8 +9,6 @@ The purpose of this project is to visualize census data on linguistic diversity 
 
 ![Pie Chart Example](https://github.com/pszujewski/d3-language-diversity/blob/master/images/color-wheel.png)
 
-![Bar Chart Example](https://github.com/pszujewski/d3-language-diversity/blob/master/images/bar-chart.png)
-
 # Getting Started with the project
 
 ### Set up
