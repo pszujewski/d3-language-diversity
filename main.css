@@ -26,7 +26,8 @@ body {
   margin-bottom: 20px; 
 }
 
-.pieContainer {
+.pieCanvas {
+  display: block;
   margin: 0 auto;
 }
 
