@@ -25,9 +25,11 @@
           <li><a href="#section-1">Horizontal Bar Chart</a></li>
           <li><a href="#section-2">Vertical Bar Chart</a></li>
           <li><a href="#section-3">Pie Charts</a></li>
-          <li><a href="#section-4">Data Table</a></li>
-          <li><a href="#section-5">U.S. Heat Map</a></li>
+          <li><a href="#section-4">U.S. Heat Map</a></li>
+          <li><a href="#section-5">Data Table for Charts</a></li>
+          <li><a href="#section-6">Data Table for Map</a></li>
         </ul>
+
         <section class="tab-view" id="section-1">
           <div class='section-1-root'>
             <p class="section-header">
@@ -35,6 +37,7 @@
             </p>
           </div>
         </section>
+
         <section class="tab-view" id="section-2">
           <div class='section-2-root'>
             <p class="section-header">
@@ -42,10 +45,26 @@
             </p>
           </div>
         </section>
+
         <section class="tab-view" id="section-3">
          <div class='section-3-root'></div>
         </section>
+
         <section class="tab-view" id="section-4">
+          <div class='heat-map-title-container'>
+            <div class='item-one'>
+              <p>Density of non-English speaking populations by state</p>
+            </div>
+            <div class='item-two-color-box'>
+              <div class='color-container'><div class='color high'></div><p>Highest % concentration</p></div>
+              <div class='color-container'><div class='color low'></div><p>Lowest % concentration</p></div>
+            </div>
+          </div>
+          <div class='section-4-root'></div>
+        </section>
+
+        <section class="tab-view" id="section-5">
+           <p class="section-header">Data Source: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4092008/table/T3/">U.S. NIH</a></p>
           <table class="table table-bordered table-hover table-condensed">
             <tbody>
               <tr>
@@ -165,17 +184,219 @@
             </tbody>
           </table>
         </section>
-        <section class="tab-view" id="section-5">
-          <div class='heat-map-title-container'>
-            <div class='item-one'>
-              <p>Density of non-English speaking populations by state</p>
-            </div>
-            <div class='item-two-color-box'>
-              <div class='color-container'><div class='color high'></div><p>Highest % concentration</p></div>
-              <div class='color-container'><div class='color low'></div><p>Lowest % concentration</p></div>
-            </div>
-          </div>
-          <div class='section-5-root'></div>
+
+        <section class="tab-view" id="section-6">
+          <p class="section-header">Data Source: <a href="https://www.census.gov/prod/2013pubs/acs-22.pdf">U.S. Census bureau</a></p>
+          <table class="table table-bordered table-hover table-condensed table-map-data">
+            <thead>
+              <tr>
+                <th title="Field #1">State</th>
+                <th title="Field #2">% Non-English Speaking at Home</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alabama</td>
+                <td align="right">5.2%</td>
+              </tr>
+              <tr>
+                <td>Alaska</td>
+                <td align="right">16.6%</td>
+              </tr>
+            <tr>
+              <td>Arizona</td>
+              <td align="right">27.0%</td>
+            </tr>
+            <tr>
+              <td>Arkansas</td>
+              <td align="right">7.5%</td>
+            </tr>
+            <tr>
+              <td>California</td>
+              <td align="right">43.8%</td>
+            </tr>
+            <tr>
+              <td>Colorado</td>
+              <td align="right">16.7%</td>
+            </tr>
+            <tr>
+              <td>Connecticut</td>
+              <td align="right">21.4%</td>
+            </tr>
+            <tr>
+              <td>Delaware</td>
+              <td align="right">13.6%</td>
+            </tr>
+            <tr>
+              <td>Florida</td>
+              <td align="right">27.6%</td>
+            </tr>
+            <tr>
+              <td>Georgia</td>
+              <td align="right">13.3%</td>
+            </tr>
+            <tr>
+              <td>Hawaii</td>
+              <td align="right">25.2%</td>
+            </tr>
+            <tr>
+              <td>Idaho</td>
+              <td align="right">10.4%</td>
+            </tr>
+            <tr>
+              <td>Illinois</td>
+              <td align="right">22.7%</td>
+            </tr>
+            <tr>
+              <td>Indiana</td>
+              <td align="right">8.2%</td>
+            </tr>
+            <tr>
+              <td>Iowa</td>
+              <td align="right">7.3%</td>
+            </tr>
+            <tr>
+              <td>Kansas</td>
+              <td align="right">11.4%</td>
+            </tr>
+            <tr>
+              <td>Kentucky</td>
+              <td align="right">4.8%</td>
+            </tr>
+            <tr>
+              <td>Louisiana</td>
+              <td align="right">8.7%</td>
+            </tr>
+            <tr>
+              <td>Maine</td>
+              <td align="right">6.6%</td>
+            </tr>
+            <tr>
+              <td>Maryland</td>
+              <td align="right">16.7%</td>
+            </tr>
+            <tr>
+              <td>Massachusetts</td>
+              <td align="right">22.0%</td>
+            </tr>
+            <tr>
+              <td>Michigan</td>
+              <td align="right">9.1%</td>
+            </tr>
+            <tr>
+              <td>Minnesota</td>
+              <td align="right">10.8%</td>
+            </tr>
+            <tr>
+              <td>Mississippi</td>
+              <td align="right">3.8%</td>
+            </tr>
+            <tr>
+              <td>Missouri</td>
+              <td align="right">6.4%</td>
+            </tr>
+            <tr>
+              <td>Montana</td>
+              <td align="right">4.7%</td>
+            </tr>
+            <tr>
+              <td>Nebraska</td>
+              <td align="right">10.3%</td>
+            </tr>
+            <tr>
+              <td>Nevada</td>
+              <td align="right">29.7%</td>
+            </tr>
+            <tr>
+              <td>New Hampshire</td>
+              <td align="right">7.8%</td>
+            </tr>
+            <tr>
+              <td>New Jersey</td>
+              <td align="right">30.4%</td>
+            </tr>
+            <tr>
+              <td>New Mexico</td>
+              <td align="right">36.5%</td>
+            </tr>
+            <tr>
+              <td>New York</td>
+              <td align="right">30.1%</td>
+            </tr>
+            <tr>
+              <td>North Carolina</td>
+              <td align="right">10.7%</td>
+            </tr>
+            <tr>
+              <td>North Dakota</td>
+              <td align="right">5.1%</td>
+            </tr>
+            <tr>
+              <td>Ohio</td>
+              <td align="right">6.7%</td>
+            </tr>
+            <tr>
+              <td>Oklahoma</td>
+              <td align="right">9.3%</td>
+            </tr>
+            <tr>
+              <td>Oregon</td>
+              <td align="right">14.9%</td>
+            </tr>
+            <tr>
+              <td>Pennsylvania</td>
+              <td align="right">10.3%</td>
+            </tr>
+            <tr>
+              <td>Rhode Island</td>
+              <td align="right">21.2%</td>
+            </tr>
+            <tr>
+              <td>South Carolina</td>
+              <td align="right">6.6%</td>
+            </tr>
+            <tr>
+              <td>South Dakota</td>
+              <td align="right">6.6%</td>
+            </tr>
+            <tr>
+              <td>Tennessee</td>
+              <td align="right">6.9%</td>
+            </tr>
+            <tr>
+              <td>Texas</td>
+              <td align="right">34.7%</td>
+            </tr>
+            <tr>
+              <td>Utah</td>
+              <td align="right">14.9%</td>
+            </tr>
+            <tr>
+              <td>Vermont</td>
+              <td align="right">4.9%</td>
+            </tr>
+            <tr>
+              <td>Virginia</td>
+              <td align="right">14.9%</td>
+            </tr>
+            <tr>
+              <td>Washington</td>
+              <td align="right">18.6%</td>
+            </tr>
+            <tr>
+              <td>West Virginia</td>
+              <td align="right">2.3%</td>
+            </tr>
+            <tr>
+              <td>Wisconsin</td>
+              <td align="right">8.7%</td>
+            </tr>
+            <tr>
+              <td>Wyoming</td>
+              <td align="right">6.4%</td>
+            </tr>
+            </tbody>
+          </table>
         </section>
       </div>
     </div>

@@ -156,12 +156,12 @@ function loadHeatMap(root) {
   // svg map canvas
   const svg = d3.select(root).append("svg").attr("width", width).attr("height", height).attr("transform", "translate(60, 0)");  
 
-  d3.csv("./states-data.csv", function(error, data) {
+  d3.csv("./data/states-data.csv", function(error, data) {
      const { max, min } = getMaxMin(data, "percentPopNonEng");
      const colorScale = d3.scaleLinear().domain([min,max]).range([lowColor, highColor]);
     
     // Load GeoJSON data and merge with states data
-    d3.json("./us-states.json", function(error, json) {
+    d3.json("./data/us-states.json", function(error, json) {
       if (error) { throw error; }
       // for the legend
 		  const w = 140
@@ -238,7 +238,7 @@ function organizeData(data) {
 
 // For grabbing the data and making the bar and pie charts
 function getDataMakeCharts(rootOne, rootTwo, rootThree) {
-  d3.csv("./language-data.csv", function(error, data) {
+  d3.csv("./data/language-data.csv", function(error, data) {
     const dataSet = organizeData(data); // create the data-set
     let languages = [];
     for (let i=0; i<dataSet.allLanguages.length; i++) {
@@ -254,10 +254,11 @@ function getDataMakeCharts(rootOne, rootTwo, rootThree) {
 }
 
 $(document).ready(function(e) {
-  $( "#tabs" ).tabs(); // jQuery UI tabs feature/ layout
+  $("#tabs").tabs(); // jQuery UI tabs feature/ layout
   getDataMakeCharts(".section-1-root", ".section-2-root", ".section-3-root"); // charts 1 - 3
-  loadHeatMap(".section-5-root"); // heat map, depends on different data so they can all load async style
+  loadHeatMap(".section-4-root"); // heat map, depends on different data so they can all load async style
 });
+
 
 
 
